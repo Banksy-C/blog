@@ -50,7 +50,7 @@ scipy.stats.entropy(pk, qk=None, base=None)
 
 ## Generative models
 
-A Generative Model is a powerful way of learning any kind of data distribution using unsupervised learning and it has achieved tremendous success in just few years. All types of generative models aim at learning the *true data distribution* of the training set so as to generate new data points with some variations. But it is not always possible to learn the exact distribution of our data either implicitly or explicitly and so we try to model a distribution which is as similar as possible to the true data distribution. 
+A Generative Model is a powerful way of learning any kind of data distribution using unsupervised learning and it has achieved tremendous success in just few years. All types of generative models aim at learning the *true data distribution* of the training set so as to generate new data points with some variations. But it is not always possible to learn the exact distribution of our data either implicitly or explicitly and so we try to model a distribution which is as similar as possible to the true data distribution.
 
 There are several examples of Generative models, like:
 
@@ -66,7 +66,7 @@ $$ p(y \vert x) = \frac{\exp F(\textbf{y}, x, \textbf{w}) / \epsilon}{\sum \lim
 * $\textbf{y}$: discrete output space
 * $x$: input data
 
-to predict labels, Generative models directly model 
+to predict labels, Generative models directly model
 
 $$ p(x) $$
 
@@ -150,7 +150,7 @@ Encoder is another Neural Network. Its input is a datapoint $x$, its output is a
 This is typically referred to as a "bottleneck" because the encoder must learn an efficient compression of the data into this *lower-dimensional space*. Let’s denote the encoder as
 
 
-$$ q_\phi (z \vert x) = \mathcal{N}(z; \mu_\phi (x), \sigma_\phi (x)). $$ 
+$$ q_\phi (z \vert x) = \mathcal{N}(z; \mu_\phi (x), \sigma_\phi (x)). $$
 
 
 ### Architecture
@@ -204,7 +204,7 @@ $ \mathbb{E}[\log p_\theta (x \vert z)] \approx \frac{1}{N} \sum \limits_{i=1}^N
 
 ### Reparametrization
 
-Where are we now? We have figured out the architecture for both Encoder and Decoder. However, how do we optimize or how do we perform backpropogation? 
+Where are we now? We have figured out the architecture for both Encoder and Decoder. However, how do we optimize or how do we perform backpropogation?
 
 <div align="center">
   <img src="https://github.com/Zhenye-Na/Zhenye-Na.github.io/blob/master/assets/images/posts-img/vae/archi2.png?raw=true" width="80%">
@@ -296,7 +296,7 @@ Recall what we mentioned in Reblablablabla section, we will use that in latent v
         return z
 ```
 
-* Latent Loss 
+* Latent Loss
 
 ```python
     def _latent_loss(self, z_mean, z_log_var):
