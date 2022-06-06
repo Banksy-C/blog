@@ -32,3 +32,15 @@ header:
       ko      : &KO       소개
       ko-KR   : *KO
     url: /About.html
+
+header:
+  - title:      Home
+    url:        /
+  - title:      Docs
+    url:        /docs/en/quick-start
+    key:        docs
+    key:        samples
+  - title:      Archive
+    url:        /archive.html
+  - title:      About
+    url:        /about.html
